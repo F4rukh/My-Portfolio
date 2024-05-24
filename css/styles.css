@@ -1,0 +1,95 @@
+.header {
+  background: #151515 url("../images/intro-bg.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header .social {
+  bottom: 20px;
+}
+
+.social-icon:hover i {
+  color: dodgerblue !important; /* Color on hover */
+}
+
+.social-icon-instagram:hover i {
+  color: palevioletred !important;
+}
+
+.social-icon-whatsapp:hover i {
+  color: green !important;
+}
+
+.social-icon-github:hover i {
+  color: gray !important;
+}
+
+.header .text-container {
+  z-index: 10;
+}
+
+.header .roles {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.about-img {
+  width: 200px;
+}
+
+.project:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+  opacity: 0.9;
+}
+
+.services {
+  background: url(../images/bg.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.services::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.services .container {
+  z-index: 10;
+}
+
+.form-control::placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 767px) {
+  .header .social {
+    font-size: 10px;
+  }
+  .header .roles {
+    font-size: 18px !important;
+  }
+  .about-content {
+    flex-direction: column;
+  }
+  .stats .stat {
+    margin-bottom: 40px;
+    border: var(--bs-dark) solid 1px;
+    padding-bottom: 20px;
+  }
+}
